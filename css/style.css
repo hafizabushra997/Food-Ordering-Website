@@ -1,0 +1,226 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit@1&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', 'Roboto', sans-serif;
+
+}
+:root{
+    --bg-color:blue;
+}
+header{
+    background: url("/images/bg1.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    background-color: rgba(165,42,42,0.85);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.logo img{
+    width: 100px;
+}
+nav ul{
+    display: flex;
+    gap: 2px;
+}
+nav ul li{
+    list-style: none;
+    display: inline;
+    font-size: 1.2rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    font-weight: 600;
+    
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: brown;
+    background-color: white;
+    border-radius: 25px;
+    
+}
+#home{
+    max-width: 700px;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    text-align: center;
+    padding: 1rem;
+    margin-inline: auto;
+    
+}
+#home p{
+    font-size: 1.3rem;
+    line-height: 27px;
+}
+/* Services section */
+#servicesSection{
+    display: flex;
+    flex-direction: column;   
+    padding: 2rem;
+    gap: 2rem;
+}
+#servicesSection h1{
+    color: brown;
+}
+#services{
+    display: flex;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    gap:2.5rem;
+    margin-inline: auto;
+    justify-content: center;
+}
+#services .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid brown;
+    flex: 1;
+    padding: 20px;
+    gap:1rem;
+    max-width: 350px;
+    background-color: #f1f3f4;
+    box-shadow: 0px 0px 15px #807d7dad;
+    border: 2px solid brown;
+    border-radius: 20px;
+    transition: all 0.5s ease-in;
+}
+#services .box:hover{
+    transform: scale(1.05);
+}
+/* Clients Section */
+#clientSection{
+    /* background-image: linear-gradient(rgba(146, 128, 128, 0.75), rgba(142, 136, 136, 0.75)), url('/images/bg2.jpg'); */
+    background-image: linear-gradient(rgb(186 179 179 / 60%), rgb(214 198 198 / 93%)), url(/images/bg2.jpg);
+
+     background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 2rem;
+   
+}
+#clientSection h1{
+    color: maroon;
+}
+#clients{
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    gap:2.5rem;
+    margin-inline: auto;
+    justify-content: center;
+
+}
+.clientItem{
+
+    transition: all 0.5s ease-in;
+}
+
+.clientItem img {
+    max-width: 300px;
+    object-fit: contain;
+  }
+
+.clientItem:hover{
+    transform: scale(1.2);
+}
+#contact{
+    background-image: linear-gradient(rgba(146, 128, 128, 0.75), rgba(142, 136, 136, 0.75)), url('/images/contact.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-color: rgba(78, 76, 76, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+    width: 100%;
+    
+    
+}
+#contact h1{
+    color: white;
+}
+
+#contactBox{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+
+    gap:2rem;
+    margin-inline: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    max-width: 700px;
+    width: 100%;
+
+}
+
+#contactBox > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+.form-group label{
+  font-size: 1.3rem;
+  font-weight: 600;
+  
+}
+
+.form-group input, .form-group textarea{
+    font-size: 1rem;
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid brown;
+    border-radius: 5px;
+
+}
+#submitBtn{
+    margin-top: 8px;
+    border-radius: 5px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 1.5rem;
+    font-size: 1.3rem;
+}
